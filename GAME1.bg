@@ -1,0 +1,6 @@
+game: TicTacToe;
+move: player1 at (0,0);
+move: player2 at (1,1);
+move: player1 at (0,1);
+move: player2 at (2,2);
+move: player1 at (0,2);
