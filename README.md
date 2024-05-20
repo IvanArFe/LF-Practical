@@ -14,20 +14,23 @@ El nostre projecte consisteix en el desenvolupament d'un intèrpret per al joc d
 - *Eines*: ANTLR4 (ANTLR v4)
 
 ### Solució
-La solució consistirà en un intèrpret implementat en Python que serà capaç de llegir seqüències de comandes en el llenguatge TicTacToe i simular el desenvolupament de partides del joc del tres en ratlla. Això inclourà la detecció de guanyadors, la gestió del tauler de joc i la visualització del seu estat durant la partida.
+La solució consistirà en un intèrpret implementat en Python que serà capaç de llegir seqüències de comandes en el llenguatge TicTacToe. Aquest, simularà el desenvolupament de partides del joc del tres en ratlla. Això inclourà la detecció de guanyadors, la gestió del tauler de joc i la visualització del seu estat durant la partida. També es té en compte la gestió de moviments invàlids per part d'algún dels jugadors.
 
 ## Contribució de cada membre
 Durant el desenvolupament del projecte, no ens hem repartit les tàsques, sinó que ens hem anat ajuntant per fer el treball de manera conjunta els tres. Hem optat per organitzar-nos d'una manera en la qual els tres hem estat involucrats en totes les etapes del projecte per tal d'aprendre i contribuir de manera equitativa a totes les parts del treball.
 
 Hem mantingut una comunicació, compartint idees, resolent problemes i prenent decisions de manera conjunta. Això ens ha permès aprendre i entendre els diversos aspectes del treball, incloent-hi la definició del llenguatge, la implementació del parser, la lògica del joc, la interfície d'usuari, la integració del sistema i les proves.
 
+Considerem que l'aprenentatge adquirit és prou bo i, que el resultat obtingut en la pràctica implementa bastant bé els coneixements vistos a l'assignatura sobre l'ús de l'eina i les gramàtiques.
+
 
 ## Com instalem i executem
 1. *Clone Repository*: Executar git clone https://github.com/IvanArFe/LF-Practical en el terminal per clonar el repositori a la màquina.
-2. *Invocar Analitzador ANTLR*: antlr4 BoardGame.g4
-3. *Compilador Java*: javac BoardGame*.java 
+2. *Instal·lar l'eina ANTLR4*: Es poden seguir els passos del següent repositoru de GitHub: https://github.com/antlr/antlr4.git 
+3. *Invocar Analitzador ANTLR sobre el fitxer de la gramàtica*: antlr4 BoardGame.g4
+3. *Compilador Java sobre els arxius generats*: javac BoardGame*.java 
 4. *Generate Parser*: antlr4 -Dlanguage=Python3 BoardGame.g4
-5. *ANTLR4 para Python*: pip install antlr4-python3-runtime
+5. *ANTLR4 per poder executar en Python*: pip install antlr4-python3-runtime
 6. *Run Interpreter*: Executar `python3 board_game_interpreter.py <fitxer JOC>`
 
 ## Com utilitzem l'eina
@@ -46,5 +49,8 @@ move: player1 at (0,1);
 move: player2 at (2,2);
 move: player1 at (0,2);
 
+## Comanda emprada
+python3 your_game.py board_file.txt
 
+Example: 
 python3 board_game_interpreter.py GAME1.txt
