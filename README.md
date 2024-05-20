@@ -38,7 +38,7 @@ Considerem que l'aprenentatge adquirit és prou bo i, que el resultat obtingut e
    7.3 source ./LFenv/bin/activate
    7.4 pip install antlr4-python3-runtime
    
-8. *Run Interpreter*: Executar `python3 board_game_interpreter.py <fitxer JOC>`
+9. *Run Interpreter*: Executar `python3 board_game_interpreter.py <fitxer JOC>`
 
 ## Com utilitzem l'eina
 Per utilitzar l'intèrpret, seguim aquests passos:
