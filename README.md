@@ -28,10 +28,15 @@ Considerem que l'aprenentatge adquirit és prou bo i, que el resultat obtingut e
 1. *Clone Repository*: Executar git clone https://github.com/IvanArFe/LF-Practical en el terminal per clonar el repositori a la màquina.
 2. *Instal·lar l'eina ANTLR4*: Es poden seguir els passos del següent repositoru de GitHub: https://github.com/antlr/antlr4.git 
 3. *Invocar Analitzador ANTLR sobre el fitxer de la gramàtica*: antlr4 BoardGame.g4
-3. *Compilador Java sobre els arxius generats*: javac BoardGame*.java 
-4. *Generate Parser*: antlr4 -Dlanguage=Python3 BoardGame.g4
-5. *ANTLR4 per poder executar en Python*: pip install antlr4-python3-runtime
-6. *Run Interpreter*: Executar `python3 board_game_interpreter.py <fitxer JOC>`
+4. *Compilador Java sobre els arxius generats*: javac BoardGame*.java
+5. *Generate Parser*: antlr4 -Dlanguage=Python3 BoardGame.g4
+7. *ANTLR4 per poder executar en Python*: pip install antlr4-python3-runtime
+   *En cas de que no funciones cal crear entorn*
+   7.1. Crear entorn virtual python:
+   7.2 python3 -m venv LFenv
+   7.3 source ./LFenv/bin/activate
+   7.4 pip install antlr4-python3-runtime
+9. *Run Interpreter*: Executar `python3 board_game_interpreter.py <fitxer JOC>`
 
 ## Com utilitzem l'eina
 Per utilitzar l'intèrpret, seguim aquests passos:
