@@ -31,14 +31,12 @@ Considerem que l'aprenentatge adquirit és prou bo i, que el resultat obtingut e
 4. *Compilador Java sobre els arxius generats*: javac BoardGame*.java
 5. *Generate Parser*: antlr4 -Dlanguage=Python3 BoardGame.g4
 7. *ANTLR4 per poder executar en Python*: pip install antlr4-python3-runtime
-   
-   *En cas de que no funciones cal crear entorn*
-   7.1. Crear entorn virtual python:
-   7.2 python3 -m venv LFenv
-   7.3 source ./LFenv/bin/activate
-   7.4 pip install antlr4-python3-runtime
-   
-9. *Run Interpreter*: Executar `python3 board_game_interpreter.py <fitxer JOC>`
+8. *En cas de que no funciones cal crear entorn* Si funciona passar a pas 13
+9. Crear entorn virtual python:
+10. python3 -m venv LFenv
+11. source ./LFenv/bin/activate
+12. pip install antlr4-python3-runtime
+13. *Run Interpreter*: Executar `python3 board_game_interpreter.py <fitxer JOC>`
 
 ## Com utilitzem l'eina
 Per utilitzar l'intèrpret, seguim aquests passos:
